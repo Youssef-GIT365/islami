@@ -15,7 +15,12 @@ dependencies:
   flutter_native_splash: ^2.4.7
   smooth_page_indicator: ^2.0.1
   flutter_launcher_icons: ^0.14.4
-
+  dio: ^5.9.2
+  dartz: ^0.10.1
+  equatable: ^2.0.8
+  flutter_bloc: ^9.1.1
+  audioplayers: ^6.7.1
+  get_it: ^9.2.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -40,6 +45,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/suras/
   fonts:
     - family: jana
       fonts:

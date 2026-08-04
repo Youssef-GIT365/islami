@@ -2,46 +2,46 @@ import 'package:flutter/material.dart';
 import 'package:islami/core/colors/appColors.dart';
 import 'package:islami/core/gen/assets.gen.dart';
 
-class customCard extends StatelessWidget {
-  customCard({
+class CustomCard extends StatelessWidget {
+  final String arabicSuraName;
+  final String englishSuraName;
+  final String verses;
+
+  const CustomCard({
     super.key,
-    required this.ArabicSuraName,
-    required this.EnglishsuraName,
+    required this.arabicSuraName,
+    required this.englishSuraName,
     required this.verses,
   });
-  String EnglishsuraName;
-  String ArabicSuraName;
-  int verses;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        width: 290,
+        width: 320,
         height: 150,
+        padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: AppColors.Gold,
           borderRadius: BorderRadius.circular(16),
-          shape: BoxShape.rectangle,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 6.0),
-                  child: Text(
-                    "$EnglishsuraName",
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      fontSize: 24,
-                      fontWeight: FontWeight.w700,
-                    ),
+                Text(
+                  englishSuraName,
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
                 Text(
-                  "$ArabicSuraName",
+                  arabicSuraName,
                   style: Theme.of(
                     context,
                   ).textTheme.headlineSmall?.copyWith(fontSize: 24),
@@ -49,8 +49,8 @@ class customCard extends StatelessWidget {
                 Row(
                   children: [
                     Text("$verses"),
-                    SizedBox(width: 5),
-                    Text("verses"),
+                    const SizedBox(width: 5),
+                    const Text("verses"),
                   ],
                 ),
               ],

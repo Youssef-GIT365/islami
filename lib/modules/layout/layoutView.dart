@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/core/colors/appColors.dart';
 import 'package:islami/core/gen/assets.gen.dart';
-import 'package:islami/modules/hadith/hadith_view.dart';
+import 'package:islami/modules/hadith/presentation/ui/hadith_view.dart';
 import 'package:islami/modules/quran/quran_view.dart';
 import 'package:islami/modules/radio/radio_view.dart';
 import 'package:islami/modules/sebha/sebha_view.dart';
