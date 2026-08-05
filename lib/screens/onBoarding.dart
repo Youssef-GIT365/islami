@@ -183,8 +183,17 @@ class _OnboardingState extends State<Onboarding> {
                   MouseRegion(
                     cursor: SystemMouseCursors.click,
                     child: InkWell(
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
                       onTap: () {
                         if (_currentIndex == onBoardingList.length - 1) {
+                          Navigator.pushAndRemoveUntil(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Layoutview(),
+                            ),
+                            (route) => false,
+                          );
                         } else {
                           _pageController.nextPage(
                             duration: const Duration(milliseconds: 300),
@@ -192,30 +201,17 @@ class _OnboardingState extends State<Onboarding> {
                           );
                         }
                       },
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16.0,
                           vertical: 8.0,
                         ),
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.pushAndRemoveUntil(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => Layoutview(),
-                              ),
-                              (route) => false,
-                            );
-                          },
-                          child: Text(
-                            _currentIndex == onBoardingList.length - 1
-                                ? "Finish"
-                                : "Next",
-                            style: Theme.of(context).textTheme.headlineSmall
-                                ?.copyWith(color: AppColors.Gold),
-                          ),
+                        child: Text(
+                          _currentIndex == onBoardingList.length - 1
+                              ? "Finish"
+                              : "Next",
+                          style: Theme.of(context).textTheme.headlineSmall
+                              ?.copyWith(color: AppColors.Gold),
                         ),
                       ),
                     ),
