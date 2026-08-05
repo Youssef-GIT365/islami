@@ -3,7 +3,7 @@ import 'package:islami/core/colors/appColors.dart';
 import 'package:islami/core/gen/assets.gen.dart';
 import 'package:islami/modules/hadith/presentation/ui/hadith_view.dart';
 import 'package:islami/modules/quran/quran_view.dart';
-import 'package:islami/modules/radio/radio_view.dart';
+import 'package:islami/modules/radio/Radio/presentation/radio_view.dart';
 import 'package:islami/modules/sebha/sebha_view.dart';
 import 'package:islami/modules/time/time_view.dart';
 
