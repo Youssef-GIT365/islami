@@ -7,6 +7,7 @@ import 'package:islami/modules/time/data/repo/pray_time_repo_imp.dart';
 import 'package:islami/modules/time/domain/usecase/pray_time_usecase.dart';
 import 'package:islami/modules/time/presentation/controller/prayer_time_cubit.dart';
 import 'package:islami/modules/time/presentation/controller/prayer_time_state.dart';
+import 'package:islami/modules/time/presentation/cutomWidget/azkar_section.dart';
 
 class TimeView extends StatelessWidget {
   const TimeView({super.key});
@@ -329,6 +330,7 @@ class TimeView extends StatelessWidget {
                                 ],
                               ),
                             ),
+                            AzkarSection(),
                           ],
                         ),
                       );

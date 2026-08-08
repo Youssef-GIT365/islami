@@ -59,6 +59,10 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Illustration.png
+  AssetGenImage get illustration =>
+      const AssetGenImage('assets/images/Illustration.png');
+
   /// File path: assets/images/Mask group.png
   AssetGenImage get maskGroup =>
       const AssetGenImage('assets/images/Mask group.png');
@@ -170,6 +174,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
+    illustration,
     maskGroup,
     mosque022,
     sebhaBody1,
@@ -200,6 +205,16 @@ class $AssetsImagesGen {
     thirdScreenBackground,
     welcome,
   ];
+}
+
+class $AssetsJsonGen {
+  const $AssetsJsonGen();
+
+  /// File path: assets/json/azkar.json
+  String get azkar => 'assets/json/azkar.json';
+
+  /// List of all assets
+  List<String> get values => [azkar];
 }
 
 class $AssetsSurasGen {
@@ -669,6 +684,7 @@ class $AssetsSurasGen {
 abstract final class Assets {
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsJsonGen json = $AssetsJsonGen();
   static const $AssetsSurasGen suras = $AssetsSurasGen();
 }
 

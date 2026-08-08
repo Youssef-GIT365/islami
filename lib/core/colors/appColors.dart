@@ -5,4 +5,5 @@ abstract class AppColors {
   static const Black = Color(0xff202020);
   static const white = Color(0xffFEFFE8);
   static const Brown = Color(0xff856B3F);
+  static const backforcards = Color(0xff202020);
 }
