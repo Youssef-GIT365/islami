@@ -118,6 +118,14 @@ class $AssetsImagesGen {
   AssetGenImage get onmosque =>
       const AssetGenImage('assets/images/onmosque.png');
 
+  /// File path: assets/images/pray_image.png
+  AssetGenImage get prayImage =>
+      const AssetGenImage('assets/images/pray_image.png');
+
+  /// File path: assets/images/pray_image_2.png
+  AssetGenImage get prayImage2 =>
+      const AssetGenImage('assets/images/pray_image_2.png');
+
   /// File path: assets/images/quran-svgrepo-com 1.svg
   SvgGenImage get quranSvgrepoCom1 =>
       const SvgGenImage('assets/images/quran-svgrepo-com 1.svg');
@@ -178,6 +186,8 @@ class $AssetsImagesGen {
     mic,
     mosque,
     onmosque,
+    prayImage,
+    prayImage2,
     quranSvgrepoCom1,
     quruan,
     radioBackground,

@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: AppTheme.getThemeData(),
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutesName.onboarding,
+      initialRoute: AppRoutesName.layout,
       routes: AppRoutes.routes,
     );
   }

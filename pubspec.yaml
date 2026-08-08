@@ -21,6 +21,8 @@ dependencies:
   flutter_bloc: ^9.1.1
   audioplayers: ^6.7.1
   get_it: ^9.2.1
+  carousel_slider: ^5.1.2
+  intl: ^0.20.3
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,6 +48,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/suras/
+    - assets/json/azkar.json
   fonts:
     - family: jana
       fonts:

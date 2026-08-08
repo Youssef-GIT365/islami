@@ -5,7 +5,7 @@ import 'package:islami/modules/hadith/presentation/ui/hadith_view.dart';
 import 'package:islami/modules/quran/quran_view.dart';
 import 'package:islami/modules/radio/Radio/presentation/radio_view.dart';
 import 'package:islami/modules/sebha/sebha_view.dart';
-import 'package:islami/modules/time/time_view.dart';
+import 'package:islami/modules/time/presentation/screens/time_view.dart';
 
 class Layoutview extends StatefulWidget {
   const Layoutview({super.key});
