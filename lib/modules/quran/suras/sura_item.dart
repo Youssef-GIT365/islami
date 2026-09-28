@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:islami/core/colors/appColors.dart';
 import 'package:islami/core/gen/assets.gen.dart';
 import 'package:islami/core/routes/app_routes_name.dart';
+import 'package:islami/modules/quran/presentation/ui/sura_reader_args.dart';
 import 'package:islami/modules/quran/suras/sura_model.dart';
 
 class SuraItem extends StatelessWidget {
@@ -23,7 +24,7 @@ class SuraItem extends StatelessWidget {
               Navigator.pushNamed(
                 context,
                 AppRoutesName.qurandetails,
-                arguments: sura,
+                arguments: SuraReaderArgs(suraNumber: sura.surahNumber),
               );
             },
             child: Container(
